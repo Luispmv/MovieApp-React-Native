@@ -1,16 +1,24 @@
 import React from "react";
 import { Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from "@react-navigation/native";
+import { peliculas } from '../data';
 
-export default function MovieCard(){
+
+export default function MovieCard({id, imagensrc, title}){
+    const navegacion = useNavigation();
     return(
-        <TouchableOpacity style={estilos.contenedor}>
+        <TouchableOpacity 
+            style={estilos.contenedor}
+            onPress={()=>{
+                navegacion.navigate("MovieDetail", peliculas)
+            }}>
             <LinearGradient 
-                colors={["transparent","rgba(0,0,0,0.8)"]}
+                colors={["transparent","rgba(0,0,0,1)"]}
                 style={estilos.gradiente}
             />
-            <Image style={estilos.imagen} source={{uri:"https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Princess_Mononoke_034.jpg?bwg=1569601131"}}></Image>
-            <Text style={estilos.texto}>Nombre de la pelicula</Text>
+            <Image style={estilos.imagen} source={{uri: imagensrc}}></Image>
+            <Text style={estilos.texto}>{title}</Text>
         
         </TouchableOpacity>
     )
@@ -41,5 +49,7 @@ const estilos = StyleSheet.create({
         textAlign:"center",
         width:"100%",
         bottom:"50%",
+        fontWeight:"bold",
+        fontSize:15
     }
 })

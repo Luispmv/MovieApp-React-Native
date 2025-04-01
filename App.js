@@ -1,46 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
-import MovieCard from './src/components/MovieCard';
-import logo from "./assets/iconlogo.png"
+import React from 'react';
+import MainScreen from './src/screens/MainScreen';
+import MovieCard from "./src/components/MovieCard"
+import MainStack from "./src/navigation/MainStack"
 
 
 export default function App() {
   return (
-    <ScrollView style={styles.mainView}>
-
-      <Image source={logo} style={styles.logo}></Image>
-      <View style={styles.container}>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-        <MovieCard></MovieCard>
-      </View>
-    </ScrollView>
+    // <MainScreen></MainScreen>
+    <MainStack/>
   );
 }
-
-const styles = StyleSheet.create({
-  mainView:{
-    backgroundColor:"black",
-    display:"flex"
-  },
-  container: {
-    flex: 1,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    backgroundColor:"black",
-    marginTop: 30
-  },
-  logo:{
-    alignSelf:"center",
-    marginTop:30
-  }
-});
