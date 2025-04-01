@@ -10,7 +10,9 @@ export const peliculas = [
         clasificación: "PG-13",
         reseña: [
             {
-                usuario: "Jose Luis",
+                usuarioimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFc0Cry8E_MF-5Qkl5umnXnZ77LI0B8tYKTn-nIG48KTFKnzxLHhIP2Usqb8Hsq0ERpH8_pM0M06a1kB-A0CToMw",
+                usuario: "El Bicho",
+                usuarioCalificacion: 9.6,
                 comentario: "Una película increíble, me encanta los temas de naturaleza que trata y cómo lo hace."
             }
         ]
@@ -26,8 +28,10 @@ export const peliculas = [
         clasificación: "PG-13",
         reseña: [
             {
-                usuario: "Jose Luis",
-                comentario: "Una película increíble, me encanta los temas de naturaleza que trata y cómo lo hace."
+                usuarioimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTryWRqty5kbHM2HeB63a-ftTXZb_q8IpK_dg&s",
+                usuario: "Chris Nolan Fan",
+                usuarioCalificacion: 10.0,
+                comentario: "Un viaje visual y emocional. La complejidad de la trama sobre agujeros negros y el tiempo me mantuvo completamente cautivado. Es una de las mejores obras de ciencia ficción de todos los tiempos."
             }
         ]
     },
@@ -40,7 +44,14 @@ export const peliculas = [
         calification: 9.3,
         sinopsis: "Un banquero injustamente encarcelado encuentra consuelo y esperanza a través de una amistad inesperada en la prisión de Shawshank...",
         clasificación: "R",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "Jose Luis",
+                usuarioCalificacion: 9.6,
+                comentario: "Una película increíble, me encanta los temas de naturaleza que trata y cómo lo hace."
+            }
+        ]
     },
     {
         id: 4,
@@ -51,7 +62,15 @@ export const peliculas = [
         calification: 8.1,
         sinopsis: "Un astuto zorro intenta proteger a su familia de tres malvados granjeros mientras sigue sus instintos naturales...",
         clasificación: "PG",
-        reseña: []
+        reseña: [
+            {
+                    usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                    usuario: "Wes Anderson Fan",
+                    usuarioCalificacion: 9.3,
+                    comentario: "Una joya del cine de animación. El estilo visual único de Wes Anderson se fusiona perfectamente con la historia llena de humor y ternura. Los personajes son entrañables y la animación stop-motion es espectacular."
+            },
+        ]
+            
     },
     {
         id: 5,
@@ -62,7 +81,14 @@ export const peliculas = [
         calification: 8.0,
         sinopsis: "Una lingüista es reclutada por el gobierno para comunicarse con extraterrestres que han llegado a la Tierra...",
         clasificación: "PG-13",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webpg",
+                usuario: "SciFiExplorer",
+                usuarioCalificacion: 9.5,
+                comentario: "Una obra maestra de la ciencia ficción. La forma en que aborda la comunicación con extraterrestres y el concepto del tiempo es fascinante. La película es profunda y emocional, con una trama que te hace reflexionar mucho después de que termina."
+            }
+        ]
     },
     {
         id: 6,
@@ -73,7 +99,14 @@ export const peliculas = [
         calification: 8.4,
         sinopsis: "Un ogro solitario se embarca en una aventura para rescatar a una princesa y recuperar su hogar del malvado Lord Farquaad...",
         clasificación: "PG",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "ShrekFan99",
+                usuarioCalificacion: 10,
+                comentario: "Un clásico de la animación. La mezcla de humor para todas las edades y el mensaje sobre la aceptación personal lo convierten en una película increíblemente entrañable. Shrek siempre será un favorito."
+            }
+        ]
     },
     {
         id: 7,
@@ -84,7 +117,14 @@ export const peliculas = [
         calification: 7.2,
         sinopsis: "Una familia puritana en Nueva Inglaterra se enfrenta a fuerzas oscuras después de la desaparición de su hijo menor...",
         clasificación: "R",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "HorrorLover",
+                usuarioCalificacion: 9,
+                comentario: "Una película inquietante y visualmente impresionante. La atmósfera tensa y la sensación constante de peligro la convierten en una experiencia aterradora. La actuación de Anya Taylor-Joy es excelente, y el enfoque lento pero meticuloso del horror psicológico mantiene al espectador cautivo hasta el final."
+            }
+        ]
     },
     {
         id: 8,
@@ -95,7 +135,14 @@ export const peliculas = [
         calification: 8.0,
         sinopsis: "Un hombre solitario desarrolla una relación con un sistema operativo inteligente diseñado para satisfacer todas sus necesidades emocionales...",
         clasificación: "R",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "RomanticCinephile",
+                usuarioCalificacion: 9,
+                comentario: "Una película profundamente emotiva y contemplativa sobre la conexión humana y la tecnología. La actuación de Joaquin Phoenix es impecable, y la relación entre él y el sistema operativo Samantha, interpretado por Scarlett Johansson, es inesperadamente conmovedora. La dirección de Spike Jonze crea un ambiente único que te hace reflexionar sobre el amor en la era digital."
+            }
+        ]
     },
     {
         id: 9,
@@ -106,7 +153,14 @@ export const peliculas = [
         calification: 8.4,
         sinopsis: "Un escritor y su familia se mudan a un hotel aislado, donde una fuerza maligna empieza a afectar su cordura...",
         clasificación: "R",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "HorrorMaster",
+                usuarioCalificacion: 10,
+                comentario: "Un clásico del cine de terror que sigue siendo aterrador incluso décadas después de su estreno. La dirección de Kubrick es magistral, creando una atmósfera claustrofóbica y psicológica. Jack Nicholson da una de las mejores actuaciones de su carrera, y la película sigue siendo un estudio de la locura, el aislamiento y el terror psicológico."
+            }
+        ]
     },
     {
         id: 10,
@@ -117,6 +171,13 @@ export const peliculas = [
         calification: 8.1,
         sinopsis: "Un grupo de científicos en la Antártida lucha por sobrevivir contra un organismo alienígena que puede imitar cualquier forma de vida...",
         clasificación: "R",
-        reseña: []
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "SciFiHorrorFan",
+                usuarioCalificacion: 9,
+                comentario: "Una obra maestra del cine de terror y ciencia ficción. La atmósfera de paranoia y desconfianza es palpable, y los efectos especiales prácticos siguen siendo impresionantes. John Carpenter crea una tensión constante mientras la criatura se esconde entre los personajes, y la película te mantiene al borde del asiento hasta su impactante final."
+            }            
+        ]
     }
 ];

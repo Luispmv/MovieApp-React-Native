@@ -3,10 +3,12 @@ import {StyleSheet, View, Text} from "react-native"
 
 
 
-export default function Calificacion(){
+export default function Calificacion({calificacion}){
     return(
         <View style={estilos.contenedor}>
-            <Text style={estilos.texto}>9.6</Text>
+            <View style={estilos.btnContainer}>
+            <Text style={estilos.texto}>{calificacion}</Text>
+            </View>
         </View>
     )
 }
@@ -21,11 +23,17 @@ const estilos = StyleSheet.create({
         position:"absolute",
         top:0
     },
-    texto:{
+    btnContainer:{
+        width:100,
+        height:100,
         backgroundColor:"#F15623",
-        color:"white",
-        padding:20,
-        fontSize:40,
         borderRadius:100,
+        display:"flex",
+        justifyContent:"center"
+    },
+    texto:{
+        color:"white",
+        fontSize:40,
+        textAlign:"center"
     }
 })

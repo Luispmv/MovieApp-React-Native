@@ -18,7 +18,6 @@ export default function MovieDetail(){
                 titulo={peliculas.title}
                 año={peliculas.year}
                 genero={peliculas.category}
-                reseñas={peliculas.calification}
                 clasificacion={peliculas.clasificación}
                 sinopsis={peliculas.sinopsis}
             ></MovieInformation>

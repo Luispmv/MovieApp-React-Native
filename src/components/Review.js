@@ -2,20 +2,20 @@ import React from "react";
 import {View, Image, Text, StyleSheet} from "react-native";
 
 
-export default function Review(){
+export default function Review({imagen, nombre, calificacion, comentario}){
     return(
         <View style={estilos.contenedor}>
             <View style={estilos.header}>
                 <View style={estilos.userinfocontainer}>
-                    <Image style={estilos.imagen} source={{uri:"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuqmrx5e_mLUJdFRMBSjfvojvWtGs8th027w_2GVvqouy6dkr_MbHORDgV0GTq-PlKuqfFlhjJi1iIziGq9Rc2ag"}}></Image>
-                    <Text style={estilos.nombre}>Nombre Usuario</Text>
+                    <Image style={estilos.imagen} source={{uri:imagen}}></Image>
+                    <Text style={estilos.nombre}>{nombre}</Text>
                 </View>
 
-                <Text style={estilos.calificacion}>9.6/10</Text>
+                <Text style={estilos.calificacion}>{calificacion}/10</Text>
 
             </View>
 
-            <Text style={estilos.reseña}>Me encantó La Princesa Mononoke. La manera en que combina la belleza de la naturaleza con una historia tan profunda y llena de emoción es increíble. Los personajes está muy bien desarrollada</Text>
+            <Text style={estilos.reseña}>{comentario}</Text>
         </View>
     )
 }

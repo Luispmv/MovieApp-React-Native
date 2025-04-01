@@ -20,11 +20,11 @@ export default function MovieInformation({titulo, año, genero, reseñas, clasif
                     <TouchableOpacity 
                         style={estilos.btn}
                         onPress={()=>{
-                            navegacion.navigate("ReviewScreen")
+                            navegacion.navigate("ReviewScreen", {peliculas})
                             console.log(peliculas)
                         }}
                         >
-                        <Text style={estilos.btnText}>{reseñas}</Text>
+                        <Text style={estilos.btnText}>reseñas</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={estilos.btn}><Text style={estilos.btnText}>{clasificacion}</Text></TouchableOpacity>
                 </View>
@@ -65,7 +65,7 @@ const estilos = StyleSheet.create({
     btn:{
         backgroundColor:"#F15623",
         color:"white",
-        padding:5,
+        padding:10,
         marginLeft:10,
         borderRadius:24,
     },
