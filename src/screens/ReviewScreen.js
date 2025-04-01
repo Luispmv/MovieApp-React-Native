@@ -11,7 +11,7 @@ export default function ReviewScreen(){
     return(
         <View style={{flex:1}}>
             <MovieHeader></MovieHeader>
-            <BtnBack destino={"MovieDetail"}></BtnBack>
+            <BtnBack destino={"MainScreen"}></BtnBack>
             <Calificacion></Calificacion>
             <ScrollView style={estilos.scrollContainer}>
                 <Review></Review>

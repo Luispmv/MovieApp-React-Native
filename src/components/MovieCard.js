@@ -11,7 +11,8 @@ export default function MovieCard({id, imagensrc, title}){
         <TouchableOpacity 
             style={estilos.contenedor}
             onPress={()=>{
-                navegacion.navigate("MovieDetail", peliculas)
+                const seleccion = peliculas.find(pelicula => pelicula.id == id)
+                navegacion.navigate("MovieDetail", {peliculas:seleccion})
             }}>
             <LinearGradient 
                 colors={["transparent","rgba(0,0,0,1)"]}

@@ -4,6 +4,7 @@ export const peliculas = [
         title: "La Princesa Mononoke",
         image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Princess_Mononoke_034.jpg?bwg=1569601131",
         category: "Aventura",
+        year: 1997,
         calification: 9.6,
         sinopsis: "La Princesa Mononoke sigue a Ashitaka, un joven guerrero maldito por un espíritu vengativo que viaja en busca de una cura...",
         clasificación: "PG-13",

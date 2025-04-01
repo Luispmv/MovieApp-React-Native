@@ -1,9 +1,14 @@
 import React from "react";
 import {Touchable, TouchableOpacity, View, StyleSheet, Text} from "react-native"
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
+import { peliculas } from "../data";
 
-export default function MovieInformation({id, titulo, año, genero, reseñas, clasificacion}){
+export default function MovieInformation({titulo, año, genero, reseñas, clasificacion, sinopsis}){
     const navegacion = useNavigation()
+
+    const route = useRoute()
+    const {peliculas} = route.params;
+
     return(
         <View style={estilos.main}>
 
@@ -16,6 +21,7 @@ export default function MovieInformation({id, titulo, año, genero, reseñas, cl
                         style={estilos.btn}
                         onPress={()=>{
                             navegacion.navigate("ReviewScreen")
+                            console.log(peliculas)
                         }}
                         >
                         <Text style={estilos.btnText}>{reseñas}</Text>
@@ -25,7 +31,7 @@ export default function MovieInformation({id, titulo, año, genero, reseñas, cl
             </View>
 
             <Text style={estilos.sinopsis}>
-            La historia sigue a Ashitaka, un príncipe maldecido por un demonio jabalí, que emprende un viaje para encontrar una cura. En su camino, se encuentra con San, la Princesa Mononoke, una joven criada por lobos que lucha por proteger los bosques de la destrucción humana. La película aborda el conflicto entre los humanos, representados por Lady Eboshi, quien busca expandir su ciudad minera, y los dioses y criaturas del bosque. Ashitaka trata de mediar entre ambos mundos, mientras enfrenta su propia maldición. La historia explora temas de naturaleza, venganza y coexistencia.
+                {sinopsis}
             </Text>
 
         </View>

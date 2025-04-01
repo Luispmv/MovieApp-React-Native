@@ -12,7 +12,6 @@ export default function MainScreen(){
           <Image source={logo} style={styles.logo}></Image>
           <View style={styles.container}>
           {peliculas.map((movie) => {
-            console.log(movie);
             return <MovieCard id={movie.id} imagensrc={movie.image} title={movie.title} />;
           })}
           </View>
