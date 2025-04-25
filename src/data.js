@@ -179,5 +179,24 @@ export const peliculas = [
                 comentario: "Una obra maestra del cine de terror y ciencia ficción. La atmósfera de paranoia y desconfianza es palpable, y los efectos especiales prácticos siguen siendo impresionantes. John Carpenter crea una tensión constante mientras la criatura se esconde entre los personajes, y la película te mantiene al borde del asiento hasta su impactante final."
             }            
         ]
+    },
+    {
+        id: 11,
+        title: "El rey leon",
+        image: "https://film-grab.com/wp-content/uploads/2024/07/The-Lion-King-64.jpg",
+        category: "Animacion",
+        year: 1994,
+        calification: 10,
+        sinopsis: "Un joven leon se enfrenta a la decision de si tomar o no el trono que ha dejado su padre, emprendiendo asi un viaje de descubrimiento",
+        clasificación: "PG-13",
+        reseña: [
+            {
+                usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+                usuario: "Rey leon Fan",
+                usuarioCalificacion: 10,
+                comentario: "Una obra maestra del cine"
+            } 
+        ]
+
     }
 ];
