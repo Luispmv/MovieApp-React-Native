@@ -4,12 +4,14 @@ import MovieCard from '../components/MovieCard';
 // import logo from './assets/iconlogo.png'; 
 import logo from "../../assets/iconlogo.png";
 import { peliculas } from '../data';
+import BtnCrud from '../components/BtnCrud';
 
 export default function MainScreen(){
     return (
         <ScrollView style={styles.mainView}>
     
           <Image source={logo} style={styles.logo}></Image>
+          <BtnCrud texto={"CRUD"} destino={"CrudScreen"}></BtnCrud>
           <View style={styles.container}>
           {peliculas.map((movie) => {
             return <MovieCard id={movie.id} imagensrc={movie.image} title={movie.title} />;

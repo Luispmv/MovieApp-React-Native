@@ -4,6 +4,7 @@ import React from "react";
 import MainScreen from "../screens/MainScreen";
 import MovieDetail from "../screens/MovieDetail";
 import ReviewScreen from "../screens/ReviewScreen";
+import CrudScreen from "../screens/CrudScreen";
 
 
 const Stack = createNativeStackNavigator()
@@ -29,6 +30,12 @@ const MainStack = ()=>{
                     name="ReviewScreen"
                     component={ReviewScreen}
                 />
+
+                <Stack.Screen
+                    name="CrudScreen"
+                    component={CrudScreen}
+                />
+
             </Stack.Navigator>
         </NavigationContainer>
     )
