@@ -9,7 +9,7 @@ import CrudScreen from "../screens/CrudScreen";
 
 const Stack = createNativeStackNavigator()
 
-const MainStack = ()=>{
+const MainStack = ({peliculas, setPeliculas})=>{
     return(
         <NavigationContainer>
             <Stack.Navigator
@@ -17,10 +17,21 @@ const MainStack = ()=>{
                     headerShown: false
                 }}
             >
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="MainScreen"
                     component={MainScreen}
-                />
+                /> */}
+
+                <Stack.Screen name="MainScreen">
+                    {props => (
+                        <MainScreen
+                            {...props}
+                            peliculas={peliculas}
+                        />
+                    )}
+                </Stack.Screen>
+
+
                 <Stack.Screen
                     name="MovieDetail"
                     component={MovieDetail}
@@ -31,10 +42,21 @@ const MainStack = ()=>{
                     component={ReviewScreen}
                 />
 
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="CrudScreen"
                     component={CrudScreen}
-                />
+                /> */}
+
+                <Stack.Screen name="CrudScreen">
+                    {props => (
+                        <CrudScreen
+                            {...props}
+                            peliculas={peliculas}
+                            setPeliculas={setPeliculas}
+                        />
+                    )}
+                </Stack.Screen>
+
 
             </Stack.Navigator>
         </NavigationContainer>

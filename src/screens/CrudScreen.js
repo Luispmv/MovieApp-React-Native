@@ -2,15 +2,24 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import BtnBack from "../components/BtnBack";
 import MainScreen from "./MainScreen";
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 
-export default function CrudScreen({CrearFuncion}){
+
+export default function CrudScreen({peliculas, setPeliculas}){
+    
+    const create = (nuevaPelicula)=>{
+        setPeliculas([...peliculas, nuevaPelicula])
+        console.log(peliculas)
+    }
+    
+    
     return(
         <View>
             <BtnBack destino={MainScreen}></BtnBack>
 
             <View style={formContainer.container}>
-            <CrearPelicula funcion={CrearFuncion}></CrearPelicula>
+            <CrearPelicula funcion={create}></CrearPelicula>
             </View>
         </View>
     )
@@ -39,7 +48,7 @@ function CrearPelicula({funcion}){
 
     const agregarPelicula = () =>{
         const nuevaPelicula = {
-            id,
+            id: uuidv4(),
             title,
             image,
             category,
@@ -54,7 +63,7 @@ function CrearPelicula({funcion}){
     }
 
     return (
-        <View styles>
+        <View>
             <Text style={{fontSize:30, fontWeight:"bold"}}>
                 Nueva Pelicula
             </Text>
