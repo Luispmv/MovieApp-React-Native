@@ -2,7 +2,7 @@ import React from "react";
 import { Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
-import { peliculas } from '../data';
+import { peliculas } from '../data';  // Archivo javascript con un array de objetos JSON con informacion de peliculas
 
 
 export default function MovieCard({id, imagensrc, title}){

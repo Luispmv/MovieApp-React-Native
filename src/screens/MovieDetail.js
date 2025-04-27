@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Button } from "react-native"
 import MovieHeader from "../components/MovieHeader";
 import MovieInformation from "../components/MovieInformation";
 import BtnBack from "../components/BtnBack";
-import { peliculas } from "../data";
 import { useRoute } from "@react-navigation/native";
 
 

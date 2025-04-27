@@ -14,7 +14,7 @@ export default function MainScreen(){
           <BtnCrud texto={"CRUD"} destino={"CrudScreen"}></BtnCrud>
           <View style={styles.container}>
           {peliculas.map((movie) => {
-            return <MovieCard id={movie.id} imagensrc={movie.image} title={movie.title} />;
+            return <MovieCard key={movie.id} id={movie.id} imagensrc={movie.image} title={movie.title} />;
           })}
           </View>
         </ScrollView>

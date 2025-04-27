@@ -1,7 +1,7 @@
 import React from "react";
 import {Touchable, TouchableOpacity, View, StyleSheet, Text} from "react-native"
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { peliculas } from "../data";
+
 
 export default function MovieInformation({titulo, año, genero, reseñas, clasificacion, sinopsis}){
     const navegacion = useNavigation()
