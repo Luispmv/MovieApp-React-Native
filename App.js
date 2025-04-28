@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import MainScreen from './src/screens/MainScreen';
 import MovieCard from "./src/components/MovieCard"
 import MainStack from "./src/navigation/MainStack"
-import { v4 as uuidv4 } from 'uuid';
-
 
 export default function App() {
   
@@ -12,7 +10,7 @@ export default function App() {
   const [peliculas, setPeliculas] = useState([
 
     {
-      id: uuidv4(),
+      id: 1,
       title: "La Princesa Mononoke",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Princess_Mononoke_034.jpg?bwg=1569601131",
       category: "Aventura",
@@ -30,7 +28,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 2,
       title: "Interestelar",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/32%20(512).jpg?bwg=1547222787",
       category: "Ciencia Ficción",
@@ -48,7 +46,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 3,
       title: "Shawshank Redemption",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/53%20(869).jpg?bwg=1547384264",
       category: "Drama",
@@ -66,7 +64,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 4,
       title: "Fantastic Mr. Fox",
       image: "https://film-grab.com/wp-content/uploads/2013/04/51.jpg",
       category: "Animación",
@@ -85,7 +83,7 @@ export default function App() {
           
   },
   {
-      id: uuidv4(),
+      id: 5,
       title: "Arrival",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/arrival028.jpg?bwg=1551281538",
       category: "Ciencia Ficción",
@@ -103,7 +101,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 6,
       title: "Shrek",
       image: "https://www.shreksadventure.com/media/2ckim5b2/shrek_still_sq600-sc50-f111_13.jpg",
       category: "Animación",
@@ -121,7 +119,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 7,
       title: "The Witch",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/imported_from_media_libray/thumb/thewitch061.jpg?bwg=1546980109",
       category: "Terror",
@@ -139,7 +137,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 8,
       title: "Her",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/01%20(454).jpg?bwg=1547220405",
       category: "Romance",
@@ -157,7 +155,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 9,
       title: "El Resplandor",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/05%20(1164).jpg?bwg=1547470754",
       category: "Terror",
@@ -175,7 +173,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 10,
       title: "The Thing",
       image: "https://film-grab.com/wp-content/uploads/photo-gallery/thumb/57%20(1098).jpg?bwg=1547474338",
       category: "Terror",
@@ -193,7 +191,7 @@ export default function App() {
       ]
   },
   {
-      id: uuidv4(),
+      id: 11,
       title: "El rey leon",
       image: "https://film-grab.com/wp-content/uploads/2024/07/The-Lion-King-64.jpg",
       category: "Animacion",

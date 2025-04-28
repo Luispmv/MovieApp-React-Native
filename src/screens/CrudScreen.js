@@ -2,7 +2,6 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import BtnBack from "../components/BtnBack";
 import MainScreen from "./MainScreen";
 import { useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -48,7 +47,7 @@ function CrearPelicula({funcion}){
 
     const agregarPelicula = () =>{
         const nuevaPelicula = {
-            id: uuidv4(),
+            id: Date.now(),
             title,
             image,
             category,
