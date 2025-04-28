@@ -4,6 +4,7 @@ import MainScreen from "./MainScreen";
 import { useState } from "react";
 import CrearPelicula from "../components/CrearPelicula"
 import ActualizarPelicula from "../components/ActualizarPelicula";
+import EliminarPelicula from "../components/EliminarPelicula";
 
 export default function CrudScreen({peliculas, setPeliculas}){
     
@@ -30,6 +31,14 @@ export default function CrudScreen({peliculas, setPeliculas}){
         }
     };
 
+    const deleteMovie = (peliNombre) => {
+        const indice = peliculas.findIndex(
+            (movie) => movie.title === peliNombre
+        );
+        if (indice !== -1) {
+            peliculas.splice(indice, 1);
+        }
+    };
     
     return(
         <ScrollView>
@@ -38,6 +47,7 @@ export default function CrudScreen({peliculas, setPeliculas}){
             <View style={formContainer.container}>
                 <CrearPelicula funcion={create}></CrearPelicula>
                 <ActualizarPelicula funcion={update}></ActualizarPelicula>
+                <EliminarPelicula funcion={deleteMovie}></EliminarPelicula>
             </View>
         </ScrollView>
     )
