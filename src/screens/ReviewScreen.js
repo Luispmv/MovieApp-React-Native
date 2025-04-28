@@ -16,13 +16,13 @@ export default function ReviewScreen(){
         <View style={{flex:1}}>
             <MovieHeader imagensrc={peliculas.image}></MovieHeader>
             <BtnBack destino={"MainScreen"}></BtnBack>
-            <Calificacion calificacion={peliculas.reseña[0].usuarioCalificacion}></Calificacion>
+            <Calificacion calificacion={peliculas.reseña[0]?.usuarioCalificacion}></Calificacion>
             <ScrollView style={estilos.scrollContainer}>
                 <Review 
-                    nombre={peliculas.reseña[0].usuario} 
-                    imagen={peliculas.reseña[0].usuarioimg}
-                    calificacion={peliculas.reseña[0].usuarioCalificacion} 
-                    comentario={peliculas.reseña[0].comentario}></Review> 
+                    nombre={peliculas.reseña[0]?.usuario} 
+                    imagen={peliculas.reseña[0]?.usuarioimg}
+                    calificacion={peliculas.reseña[0]?.usuarioCalificacion} 
+                    comentario={peliculas.reseña[0]?.comentario}></Review> 
             </ScrollView>
         </View> 
     )    
