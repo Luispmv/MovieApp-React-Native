@@ -208,7 +208,26 @@ export default function App() {
           } 
       ]
 
-  }
+  },
+  {
+    id: 12,
+    title: "Avatar",
+    image: "https://film-grab.com/wp-content/uploads/photo-gallery/Avatar_056.jpg?bwg=1569330974",
+    category: "Aventura",
+    year: 2009,
+    calification: 8,
+    sinopsis: "Un joven militar se adentra en un planeta desconocido cambiando de cuerpo con los nativos.",
+    clasificación: "PG-13",
+    reseña: [
+        {
+            usuarioimg: "https://cdn.prod.website-files.com/657b24018d72422f5109a72e/66bc63b74e20ea51c184d76a_gigachad-crypto.webp",
+            usuario: "Avatar Fan",
+            usuarioCalificacion: 10,
+            comentario: "Una obra maestra del cine"
+        } 
+    ]
+
+}
 
   ])
 
