@@ -37,10 +37,20 @@ const MainStack = ({peliculas, setPeliculas})=>{
                     component={MovieDetail}
                 />
 
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="ReviewScreen"
                     component={ReviewScreen}
-                />
+                /> */}
+
+                <Stack.Screen name="ReviewScreen"> 
+                    {props =>(
+                        <ReviewScreen
+                            {...props}
+                            movies = {peliculas}
+                            setMovies = {setPeliculas}
+                        />
+                    )}
+                </Stack.Screen>
 
                 {/* <Stack.Screen
                     name="CrudScreen"
