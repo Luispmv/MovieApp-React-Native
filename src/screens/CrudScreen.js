@@ -8,6 +8,7 @@ import EliminarPelicula from "../components/EliminarPelicula";
 import CrearReseña from "../components/CrearComentario";
 import CrearComentario from "../components/CrearComentario";
 import ActualizarComentario from "../components/ActualizarComentario";
+import EliminarComentario from "../components/EliminarComentario";
 
 export default function CrudScreen({peliculas, setPeliculas}){
     
@@ -75,6 +76,16 @@ export default function CrudScreen({peliculas, setPeliculas}){
 
     }
 
+    const deleteReview = (pelicula, usuario) => {
+        const peliculaEncontrada = peliculas.find(
+            (movie) => movie.title === pelicula
+        )
+
+        if(peliculaEncontrada){
+            console.log(peliculaEncontrada)
+        }
+    }
+
     return(
         <ScrollView>
             <BtnBack destino={MainScreen}></BtnBack>
@@ -86,6 +97,8 @@ export default function CrudScreen({peliculas, setPeliculas}){
             
                 <CrearComentario funcion={createReview}></CrearComentario>
                 <ActualizarComentario funcion={updateReview}></ActualizarComentario>
+                <EliminarComentario funcion={deleteReview}></EliminarComentario>
+            
             </View>
         </ScrollView>
     )
