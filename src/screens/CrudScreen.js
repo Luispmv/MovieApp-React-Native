@@ -7,6 +7,7 @@ import ActualizarPelicula from "../components/ActualizarPelicula";
 import EliminarPelicula from "../components/EliminarPelicula";
 import CrearReseña from "../components/CrearComentario";
 import CrearComentario from "../components/CrearComentario";
+import ActualizarComentario from "../components/ActualizarComentario";
 
 export default function CrudScreen({peliculas, setPeliculas}){
     
@@ -56,6 +57,24 @@ export default function CrudScreen({peliculas, setPeliculas}){
         setPeliculas(nuevaListaPeliculas);
     };
 
+    const updateReview = (nombre, usuario, usuarioCalificacion, comentario) =>{
+        const peliculaEncontrada = peliculas.find(
+            (movie) => movie.title === nombre
+        )
+
+        if(peliculaEncontrada){
+            peliculaEncontrada.reseña.map((review)=>{
+                console.log(review)
+                if(review.usuario === usuario){
+                    console.log("Usuario encontrado")
+                    review.usuarioCalificacion = usuarioCalificacion
+                    review.comentario = comentario
+                }
+            })
+        }
+
+    }
+
     return(
         <ScrollView>
             <BtnBack destino={MainScreen}></BtnBack>
@@ -66,6 +85,7 @@ export default function CrudScreen({peliculas, setPeliculas}){
                 <EliminarPelicula funcion={deleteMovie}></EliminarPelicula>
             
                 <CrearComentario funcion={createReview}></CrearComentario>
+                <ActualizarComentario funcion={updateReview}></ActualizarComentario>
             </View>
         </ScrollView>
     )
@@ -79,7 +99,8 @@ const formContainer = StyleSheet.create({
         marginRight: 30,
         display: "flex",
         flexDirection: "column",
-        gap: 20
+        gap: 20,
+        marginBottom:30
     }
 })
 
