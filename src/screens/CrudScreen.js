@@ -75,16 +75,20 @@ export default function CrudScreen({peliculas, setPeliculas}){
         }
 
     }
-
     const deleteReview = (pelicula, usuario) => {
         const peliculaEncontrada = peliculas.find(
             (movie) => movie.title === pelicula
-        )
-
-        if(peliculaEncontrada){
-            console.log(peliculaEncontrada)
+        );
+    
+        if (peliculaEncontrada) {
+            const index = peliculaEncontrada.reseña.findIndex(
+                (elemento) => elemento.usuario === usuario
+            );
+            if (index !== -1) {
+                peliculaEncontrada.reseña.splice(index, 1);
+            }
         }
-    }
+    };
 
     return(
         <ScrollView>
