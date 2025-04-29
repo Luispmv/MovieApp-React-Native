@@ -5,6 +5,8 @@ import { useState } from "react";
 import CrearPelicula from "../components/CrearPelicula"
 import ActualizarPelicula from "../components/ActualizarPelicula";
 import EliminarPelicula from "../components/EliminarPelicula";
+import CrearReseña from "../components/CrearComentario";
+import CrearComentario from "../components/CrearComentario";
 
 export default function CrudScreen({peliculas, setPeliculas}){
     
@@ -40,6 +42,20 @@ export default function CrudScreen({peliculas, setPeliculas}){
         }
     };
     
+    const createReview = ({ nuevoComentario, pNombre }) => {
+        const nuevaListaPeliculas = peliculas.map((movie) => {
+            if (movie.title === pNombre) {
+                return {
+                    ...movie,
+                    reseña: [...movie.reseña, nuevoComentario]
+                };
+            }
+            return movie;
+        });
+    
+        setPeliculas(nuevaListaPeliculas);
+    };
+
     return(
         <ScrollView>
             <BtnBack destino={MainScreen}></BtnBack>
@@ -48,6 +64,8 @@ export default function CrudScreen({peliculas, setPeliculas}){
                 <CrearPelicula funcion={create}></CrearPelicula>
                 <ActualizarPelicula funcion={update}></ActualizarPelicula>
                 <EliminarPelicula funcion={deleteMovie}></EliminarPelicula>
+            
+                <CrearComentario funcion={createReview}></CrearComentario>
             </View>
         </ScrollView>
     )
