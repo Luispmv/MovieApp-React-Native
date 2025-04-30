@@ -18,14 +18,14 @@ export default function ActualizarComentario({funcion}){
 
 
     return(
-        <View>
-            <Text style={{fontSize:30, fontWeight:"bold"}}>
+        <View style={{borderStyle:"solid", borderColor:"#F15623", borderWidth:10, padding:10}}>
+            <Text style={{fontSize:28, fontWeight:"bold", color:"white"}}>
                 Actualizar Comentario
             </Text>
-            <TextInput value={nombre} onChangeText={setNombre} placeholder="Pelicula donde esta el comentario"></TextInput>
-            <TextInput value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
-            <TextInput value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Nueva calificacion" keyboardType="numeric"></TextInput>
-            <TextInput value={comentario} onChangeText={setComentario} placeholder="Nuevo Comentario"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Pelicula donde esta el comentario"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Nueva calificacion" keyboardType="numeric"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={comentario} onChangeText={setComentario} placeholder="Nuevo Comentario"></TextInput>
         
             <TouchableOpacity style={botonStyles.container} onPress={actualizarComentario}>
                 <Text style={botonStyles.text}>Actualizar</Text>
@@ -44,6 +44,7 @@ const botonStyles = StyleSheet.create({
         justifyContent: "center"
     },
     text: {
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight:"bold"
     }
 })

@@ -13,13 +13,13 @@ export default function EliminarPelicula({funcion}){
 
 
     return(
-        <View>
-            <Text style={{fontSize:30, fontWeight:"bold"}}>
+        <View style={{borderStyle:"solid", borderColor:"#F15623", borderWidth:10, padding:10}}>
+            <Text style={{fontSize:30, fontWeight:"bold", color:"white"}}>
                 Eliminar Pelicula
             </Text>
             <View>
 
-                <TextInput value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres eliminar"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres eliminar"></TextInput>
 
                 <TouchableOpacity style={botonStyles.container} onPress={eliminarPelicula}>
                     <Text style={botonStyles.text}>Eliminar </Text>    
@@ -40,6 +40,7 @@ const botonStyles = StyleSheet.create({
         justifyContent: "center"
     },
     text: {
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight:"bold"
     }
 })

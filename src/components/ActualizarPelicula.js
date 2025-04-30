@@ -26,18 +26,18 @@ export default function ActualizarPelicula({funcion}){
 
     
     return(
-        <View>
-            <Text style={{fontSize:30, fontWeight:"bold"}}>
+        <View style={{borderStyle:"solid", borderColor:"#F15623", borderWidth:5, padding:10}}>
+            <Text style={{fontSize:30, fontWeight:"bold", color: "white"}}>
                 Actualizar Pelicula
             </Text>
             <View>
 
-                <TextInput value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres actualizar"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres actualizar"></TextInput>
 
-                <TextInput value={image} onChangeText={setImage} placeholder="Nuevo Poster"></TextInput>
-                <TextInput value={category} onChangeText={setCategory} placeholder="Nueva Categoria"></TextInput>
-                <TextInput value={calification} onChangeText={setCalification} placeholder="Nueva Calificacion"></TextInput>
-                <TextInput value={sinopsis} onChangeText={setSinopsis} placeholder="Nueva sinopsis"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={image} onChangeText={setImage} placeholder="Nuevo Poster"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={category} onChangeText={setCategory} placeholder="Nueva Categoria"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={calification} onChangeText={setCalification} placeholder="Nueva Calificacion"></TextInput>
+                <TextInput placeholderTextColor={"gray"} value={sinopsis} onChangeText={setSinopsis} placeholder="Nueva sinopsis"></TextInput>
 
                 <TouchableOpacity style={botonStyles.container} onPress={encontrarPelicula}>
                     <Text style={botonStyles.text}>Actualizar</Text>    
@@ -58,6 +58,7 @@ const botonStyles = StyleSheet.create({
         justifyContent: "center"
     },
     text: {
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight:"bold"
     }
 })

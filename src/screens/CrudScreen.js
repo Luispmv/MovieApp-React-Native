@@ -91,7 +91,7 @@ export default function CrudScreen({peliculas, setPeliculas}){
     };
 
     return(
-        <ScrollView>
+        <ScrollView style={{backgroundColor:"black"}}>
             <BtnBack destino={MainScreen}></BtnBack>
 
             <View style={formContainer.container}>

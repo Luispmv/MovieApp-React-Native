@@ -11,12 +11,12 @@ export default function EliminarComentario({funcion}){
     }
 
     return(
-        <View>
-            <Text style={{fontSize:30, fontWeight:"bold"}}>
+        <View style={{borderStyle:"solid", borderColor:"#F15623", borderWidth:10, padding:10}}>
+            <Text style={{fontSize:30, fontWeight:"bold", color:"white"}}>
                 Eliminar Comentario
             </Text>
-            <TextInput value={pelicula} onChangeText={setPelicula} placeholder="Pelicula donde esta el comentario"></TextInput>
-            <TextInput value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={pelicula} onChangeText={setPelicula} placeholder="Pelicula donde esta el comentario"></TextInput>
+            <TextInput placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
 
             <TouchableOpacity style={botonStyles.container} onPress={eliminarComentario}>
                 <Text style={botonStyles.text}>Eliminar</Text>
@@ -34,6 +34,7 @@ const botonStyles = StyleSheet.create({
         justifyContent: "center"
     },
     text: {
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight:"bold"
     }
 })

@@ -6,7 +6,7 @@ import MainStack from "./src/navigation/MainStack"
 
 export default function App() {
   
-  // Gestion del estado global
+  // Gestion del estado global con un array inicial de 12 elementos.
   const [peliculas, setPeliculas] = useState([
 
     {
