@@ -32,12 +32,12 @@ export default function ActualizarPelicula({funcion}){
             </Text>
             <View>
 
-                <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres actualizar"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres actualizar"></TextInput>
 
-                <TextInput placeholderTextColor={"gray"} value={image} onChangeText={setImage} placeholder="Nuevo Poster"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={category} onChangeText={setCategory} placeholder="Nueva Categoria"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={calification} onChangeText={setCalification} placeholder="Nueva Calificacion"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={sinopsis} onChangeText={setSinopsis} placeholder="Nueva sinopsis"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={image} onChangeText={setImage} placeholder="Nuevo Poster"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={category} onChangeText={setCategory} placeholder="Nueva Categoria"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={calification} onChangeText={setCalification} placeholder="Nueva Calificacion"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={sinopsis} onChangeText={setSinopsis} placeholder="Nueva sinopsis"></TextInput>
 
                 <TouchableOpacity style={botonStyles.container} onPress={encontrarPelicula}>
                     <Text style={botonStyles.text}>Actualizar</Text>    

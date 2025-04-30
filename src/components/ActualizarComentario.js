@@ -22,10 +22,10 @@ export default function ActualizarComentario({funcion}){
             <Text style={{fontSize:28, fontWeight:"bold", color:"white"}}>
                 Actualizar Comentario
             </Text>
-            <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Pelicula donde esta el comentario"></TextInput>
-            <TextInput placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
-            <TextInput placeholderTextColor={"gray"} value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Nueva calificacion" keyboardType="numeric"></TextInput>
-            <TextInput placeholderTextColor={"gray"} value={comentario} onChangeText={setComentario} placeholder="Nuevo Comentario"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Pelicula donde esta el comentario"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Nueva calificacion" keyboardType="numeric"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={comentario} onChangeText={setComentario} placeholder="Nuevo Comentario"></TextInput>
         
             <TouchableOpacity style={botonStyles.container} onPress={actualizarComentario}>
                 <Text style={botonStyles.text}>Actualizar</Text>

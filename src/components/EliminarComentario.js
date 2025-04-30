@@ -15,8 +15,8 @@ export default function EliminarComentario({funcion}){
             <Text style={{fontSize:30, fontWeight:"bold", color:"white"}}>
                 Eliminar Comentario
             </Text>
-            <TextInput placeholderTextColor={"gray"} value={pelicula} onChangeText={setPelicula} placeholder="Pelicula donde esta el comentario"></TextInput>
-            <TextInput placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={pelicula} onChangeText={setPelicula} placeholder="Pelicula donde esta el comentario"></TextInput>
+            <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Coloca tu nombre de usuario"></TextInput>
 
             <TouchableOpacity style={botonStyles.container} onPress={eliminarComentario}>
                 <Text style={botonStyles.text}>Eliminar</Text>

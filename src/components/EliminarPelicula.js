@@ -19,7 +19,7 @@ export default function EliminarPelicula({funcion}){
             </Text>
             <View>
 
-                <TextInput placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres eliminar"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={nombre} onChangeText={setNombre} placeholder="Coloca la pelicula que quieres eliminar"></TextInput>
 
                 <TouchableOpacity style={botonStyles.container} onPress={eliminarPelicula}>
                     <Text style={botonStyles.text}>Eliminar </Text>    

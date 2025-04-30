@@ -27,11 +27,11 @@ export default function CrearComentario({funcion}){
                         Nuevo Comentario
             </Text>
             <View>
-                <TextInput placeholderTextColor={"gray"} value={pelicula} onChangeText={setPelicula} placeholder="Nombre de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Nombre nuevo usuario"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={usuarioImg} onChangeText={setUsuarioImg} placeholder="Nueva imagen de usuario"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Tu calificacion" keyboardType="numeric"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={comentario} onChangeText={setComentario} placeholder="Colocar reseña"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={pelicula} onChangeText={setPelicula} placeholder="Nombre de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuario} onChangeText={setUsuario} placeholder="Nombre nuevo usuario"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuarioImg} onChangeText={setUsuarioImg} placeholder="Nueva imagen de usuario"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={usuarioCalificacion} onChangeText={setUsuarioCalificacion} placeholder="Tu calificacion" keyboardType="numeric"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={comentario} onChangeText={setComentario} placeholder="Colocar reseña"></TextInput>
             
                 <TouchableOpacity style={botonStyles.container} onPress={agregarComentario}>
                     <Text style={botonStyles.text}>Nueva reseña</Text>

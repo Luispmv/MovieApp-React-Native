@@ -36,13 +36,13 @@ export default function CrearPelicula({funcion}){
                 Nueva Pelicula
             </Text>
             <View>
-                <TextInput placeholderTextColor={"gray"} value={title} onChangeText={setTitle} placeholder="Titulo de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={image} onChangeText={setImage} placeholder="Poster de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={category} onChangeText={setCategory} placeholder="Categoria de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={year} onChangeText={setYear} keyboardType="numeric" placeholder="Año de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={calification} onChangeText={setCalification} keyboardType="numeric" placeholder="Coloca Calificacion"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={sinopsis} onChangeText={setSinopsis} placeholder="Sinopsis de la pelicula"></TextInput>
-                <TextInput placeholderTextColor={"gray"} value={clasificación} onChangeText={setClasificacion} placeholder="Clasificacion de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={title} onChangeText={setTitle} placeholder="Titulo de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={image} onChangeText={setImage} placeholder="Poster de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={category} onChangeText={setCategory} placeholder="Categoria de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={year} onChangeText={setYear} keyboardType="numeric" placeholder="Año de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={calification} onChangeText={setCalification} keyboardType="numeric" placeholder="Coloca Calificacion"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={sinopsis} onChangeText={setSinopsis} placeholder="Sinopsis de la pelicula"></TextInput>
+                <TextInput style={{color:"gray"}} placeholderTextColor={"gray"} value={clasificación} onChangeText={setClasificacion} placeholder="Clasificacion de la pelicula"></TextInput>
                 <TouchableOpacity style={botonStyles.container} onPress={agregarPelicula}>
                     <Text style={botonStyles.text}>Crear nueva pelicula</Text>
                 </TouchableOpacity>
